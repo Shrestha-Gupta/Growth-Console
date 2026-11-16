@@ -1,0 +1,86 @@
+/* ==========================================================================
+   GROWTH CONSOLE — DESIGN TOKENS (tokens.css)
+   Approved Royal Ivory Palette & Architectural Geometry
+   Organization: Growth Tech India
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Structural Canvases */
+  --color-bg-base: #FBF9F5;               /* Warm Ivory / Primary Canvas */
+  --color-bg-surface: #F4EFE6;            /* Warm Cream / Secondary Surface */
+  --color-bg-elevated: #EDE6D9;           /* Warm Alabaster / Elevated Modals & Drawers */
+  --color-bg-sunken: #E5DDD0;             /* Inset Form Controls & Filter Bars */
+  --color-bg-dark: #1C1B1A;               /* Warm Charcoal / Visual Canvas */
+
+  /* Royal Accents (Strictly Ivory, Gold, Champagne) */
+  --color-accent-gold: #C5A059;           /* Antique Gold / Primary Brand Highlight */
+  --color-accent-gold-hover: #B38E46;     /* Deep Antique Gold for Hover */
+  --color-accent-champagne: #DFD0B5;      /* Pale Champagne / Subtle Active Fill */
+  --color-accent-gold-soft: rgba(197, 160, 89, 0.12); /* Subtle Fill Tint */
+  --color-accent-gold-subtle: rgba(197, 160, 89, 0.06);
+
+  /* Typography Colors */
+  --color-text-primary: #1C1B1A;          /* Warm Charcoal / Primary Headings */
+  --color-text-secondary: #5C5852;        /* Slate Charcoal / Body Typography */
+  --color-text-muted: #8C867E;            /* Muted Taupe / Metadata, Placeholders */
+  --color-text-inverse: #FBF9F5;          /* Warm Ivory / Text on Dark Surfaces */
+  --color-text-gold: #8E6E2E;             /* Burnished Gold for Active Text */
+
+  /* Architectural Hairline Borders */
+  --color-border: #E6DFD3;                /* Hairline Separator & Cell Border */
+  --color-border-medium: #D1C7B7;         /* Form Input Outline */
+  --color-border-gold: #C5A059;           /* Active Focus State Outline */
+  --color-border-dark: #2E2C2A;           /* Dark Panel Border */
+
+  /* Standardized Status Tokens (Green Strictly Excluded) */
+  /* Active: Antique Gold / Champagne */
+  --color-status-active-bg: #F4EFE6;
+  --color-status-active-border: #C5A059;
+  --color-status-active-text: #6E5321;
+  --color-status-active-dot: #C5A059;
+
+  /* Inactive: Muted Taupe / Slate */
+  --color-status-inactive-bg: #EDE6D9;
+  --color-status-inactive-border: #8C867E;
+  --color-status-inactive-text: #5C5852;
+  --color-status-inactive-dot: #8C867E;
+
+  /* Suspended: Muted Crimson */
+  --color-destructive: #9B3D3D;           /* Muted Crimson */
+  --color-destructive-hover: #832E2E;
+  --color-status-suspended-bg: #FDF4F4;
+  --color-status-suspended-border: #9B3D3D;
+  --color-status-suspended-text: #9B3D3D;
+  --color-status-suspended-dot: #9B3D3D;
+
+  /* 8-Point Spatial Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-8: 48px;
+  --space-12: 64px;
+
+  /* Border Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;                       /* Default: Buttons, Inputs, Chips */
+  --radius-md: 6px;                       /* Panels, Modals, Cards */
+  --radius-lg: 8px;                       /* Outer Shells */
+  --radius-full: 9999px;                  /* Badges, Pills */
+
+  /* Elevation Shadows (Restrained & Architectural) */
+  --shadow-subtle: 0 1px 2px rgba(28, 27, 26, 0.04);
+  --shadow-medium: 0 2px 6px rgba(28, 27, 26, 0.05);
+  --shadow-elevated: 0 4px 16px rgba(28, 27, 26, 0.06), 0 1px 3px rgba(28, 27, 26, 0.04);
+  --shadow-modal: 0 16px 36px rgba(28, 27, 26, 0.12), 0 2px 6px rgba(28, 27, 26, 0.04);
+  --shadow-focus: 0 0 0 2px #FBF9F5, 0 0 0 4px #C5A059;
+  --shadow-focus-destructive: 0 0 0 2px #FBF9F5, 0 0 0 4px #9B3D3D;
+
+  /* Motion & Durations */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-editorial: cubic-bezier(0.25, 1, 0.5, 1);
+}
