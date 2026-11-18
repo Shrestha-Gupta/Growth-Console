@@ -98,10 +98,10 @@ export const verifyCsrfTokenString = (token, expectedSessionId = 'anon') => {
 export const setCsrfCookie = (res, token) => {
   res.cookie(CSRF_COOKIE_NAME, token, {
     httpOnly: false,
-    secure:   env.isProd,
-    sameSite: 'Lax',
-    maxAge:   8 * 60 * 60 * 1000, // 8 hours (matches session)
-    path:     '/',
+    secure: env.isProd,
+    sameSite: env.isProd ? 'none' : 'lax',
+    maxAge: 8 * 60 * 60 * 1000, // 8 hours (matches session)
+    path: '/',
   });
 };
 
@@ -111,9 +111,9 @@ export const setCsrfCookie = (res, token) => {
 export const clearCsrfCookie = (res) => {
   res.clearCookie(CSRF_COOKIE_NAME, {
     httpOnly: false,
-    secure:   env.isProd,
-    sameSite: 'Lax',
-    path:     '/',
+    secure: env.isProd,
+    sameSite: env.isProd ? 'none' : 'lax',
+    path: '/',
   });
 };
 

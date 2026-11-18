@@ -33,11 +33,11 @@ export const setTokenCookie = (res, token) => {
   const maxAge = parseExpiry(env.jwtExpiresIn);
 
   res.cookie(COOKIE_NAME, token, {
-    httpOnly:  true,
-    secure:    env.isProd,
-    sameSite:  'Lax',
+    httpOnly: true,
+    secure: env.isProd,
+    sameSite: env.isProd ? 'none' : 'lax',
     maxAge,
-    path:      '/',
+    path: '/',
   });
 };
 
@@ -46,10 +46,10 @@ export const setTokenCookie = (res, token) => {
  */
 export const clearTokenCookie = (res) => {
   res.clearCookie(COOKIE_NAME, {
-    httpOnly:  true,
-    secure:    env.isProd,
-    sameSite:  'Lax',
-    path:      '/',
+    httpOnly: true,
+    secure: env.isProd,
+    sameSite: env.isProd ? 'none' : 'lax',
+    path: '/',
   });
 };
 
@@ -80,7 +80,7 @@ function parseExpiry(str) {
     case 'm': return val * 60 * 1000;
     case 'h': return val * 60 * 60 * 1000;
     case 'd': return val * 24 * 60 * 60 * 1000;
-    default:  return 8 * 60 * 60 * 1000;
+    default: return 8 * 60 * 60 * 1000;
   }
 }
 
