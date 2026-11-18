@@ -191,3 +191,17 @@ node scripts/testConcurrencyHardening.js
 ## License
 
 Proprietary — Growth Tech India. All rights reserved.
+
+---
+
+## Additional Project Documentation
+
+The following supporting documents are maintained at the repository root:
+
+| Document | Description |
+|---|---|
+| [Project Structure](./PROJECT_STRUCTURE.md) | Complete repository directory tree, module descriptions, and codebase navigation guide. |
+| [API Documentation](./API_DOCUMENTATION.md) | REST API endpoints, request/response formats, authentication, and CSRF requirements. |
+| [Final Test Report](./FINAL_TEST_REPORT.md) | Automated test results, QA verification, and security audit summary. |
+
+These documents are kept as separate files for easier navigation and maintenance. They are also available directly from the repository root.
